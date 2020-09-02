@@ -1,0 +1,472 @@
+html, body {
+  width: 100%;
+  min-height: 100vh !important;
+}
+
+
+body {
+  position: relative;
+}
+
+.current {
+  border-bottom: 2px solid white;
+}
+.current2 {
+  border-bottom: 2px solid black;
+}
+
+/* ###########NAVBAR########### */
+
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+#nav-hem {
+  background-color: white;
+}
+#nav-hem li {
+  color: black;
+}
+#nav-hem li:hover {
+  background-color: black;
+  color: white;
+  /* text-decoration-line: underline; */
+}
+
+nav ul {
+  width: 80%;
+  /* height: 50px; */
+  /* background-color: black; */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.default-nav ul {
+  justify-content: space-between;
+  z-index: 1;
+}
+
+nav li {
+  color: white;
+  padding: 16px 64px;
+  cursor: pointer;
+  transition: 500ms;
+}
+nav li:hover {
+  background-color: white;
+  color: black;
+  /* text-decoration-line: underline; */
+}
+
+nav a {
+  text-decoration-line: none;
+}
+
+#main-image {
+  height: 400px;
+  background-image: url("/imgs/bg-kontakt.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main-image h1 {
+  text-align: center;
+  color: white;
+  margin: 0;
+  font-size: 72px;
+  padding-top: 150px;
+}
+#main-image p {
+  color: rgb(222, 222, 222);
+  padding: 0px 64px;
+  text-align: center;
+  text-shadow: 0 0 10px black;
+}
+
+#nav-vertical {
+  position: absolute;
+  display:flex;
+  justify-content: flex-start;
+  width: 191px;
+  width: 200px;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  text-align: center;
+}
+
+#nav-vertical ul {
+  position: absolute;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 191px;
+  padding-top: 100px;
+}
+
+#nav-vertical li {
+  margin-bottom: 32px;
+}
+
+#nav-ommig ul{
+  /* padding-left: 444px; */
+  justify-content: space-evenly;
+}
+
+
+/* ###########NAVBAR########### */
+
+/* ##########MAIN########## */
+
+#main-box {
+  background-color: white;
+  -webkit-box-shadow: inset 0px 20px 20px -25px rgba(0,0,0,1);
+  -moz-box-shadow: inset 0px 20px 20px -25px rgba(0,0,0,1);
+  box-shadow: inset 0px 20px 20px -25px rgba(0,0,0,1);
+  width: 100%;
+  /* height: 1000px; */
+}
+
+#main-box ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#main-box .card-component {
+  width: 300px;
+  height: 400px;
+  cursor: pointer;
+  /* border: 1px solid black; */
+  -webkit-box-shadow: 5px 5px 50px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 50px -15px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 50px -15px rgba(0,0,0,0.75);
+  border-radius: 0 0 20px 20px;
+  transition: 500ms;
+}
+#main-box .card-component:hover {
+  /* transform: rotateY(-50deg); */
+  transform: rotate(-1deg) scale(1.05);
+}
+#main-box a:active .card-component {
+  transform: rotate(0deg) scale(1);
+  background-color: rgba(0, 0, 0, 0.1)
+}
+
+#main-box a {
+  text-decoration-line: none;
+  color: black;
+}
+
+#main-box p {
+  padding: 20px;
+  text-align: center;
+}
+
+
+#main-box ul h1 {
+  margin: 0;
+  padding: 0;
+  padding-left: 6px;
+}
+
+#main-box-components {
+  padding: 100px 0px 150px 0px;
+  perspective: 1000px;
+  perspective-origin: center;
+}
+
+.card-images {
+  width: 300px;
+  height: 150px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+}
+
+.card-images img {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ##########MAIN########## */
+
+
+/* ##############FOOTER############## */
+
+/* footer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  bottom: 0;
+} */
+
+footer div {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 2;
+}
+
+/* footer .footer-ommig {
+  bottom: -57px;
+} */
+
+/* footer div ul {
+  display: flex;
+  justify-content: center;
+} */
+
+footer div ul span {
+ color: white;
+ margin: 0px 2px;
+}
+footer div ul span:hover {
+  cursor: pointer;
+  text-decoration-line: underline;
+ }
+
+/* ##############FOOTER############## */
+
+
+/* ########################KONTAKT######################## */
+
+header li {
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+
+#body-kontakt {
+  position: relative;
+  background-image: url("/imgs/bg-kontakt.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#form-box {
+  margin: 130px auto;
+  width: 600px;
+  padding: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  box-shadow: 2px 2px;
+  -webkit-box-shadow: 10px 10px 50px -30px cyan;
+  -moz-box-shadow: 10px 10px 50px -30px cyan;
+  box-shadow: 10px 10px 50px -30px cyan;
+}
+
+#input-field-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+#mail{
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#e-mail {
+  width: 100%;
+}
+#mail {
+  width: 100%;
+}
+
+#box {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  /* display: flex;
+  justify-content: center; */
+}
+
+#textbox {
+  width: 80%;
+  height: 100px;
+  resize: none;
+}
+
+#form-submit {
+  width: 80px;
+  height: 40px;
+  outline: none;
+  border: none;
+}
+
+#form-box input {
+  border-radius: 2px;
+  height: 24px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+#form-box input:focus {
+  border: 1px solid cyan;
+  transition: 1s;
+}
+
+#textbox {
+  border-radius: 2px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+#form-box #textbox:focus {
+  border: 1px solid cyan;
+  transition: 1s;
+}
+
+
+#form-submit {
+  border-radius: 2px;
+  border: 2px solid rgba(255, 255, 255, 0);
+  transition: 200ms;
+}
+#form-submit:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+#name-box {
+  padding-top: 12px;
+}
+#e-mail-box {
+  padding-top: 12px;
+}
+#textbox-box {
+  padding-top: 12px;
+}
+
+form span {
+  color: red;
+}
+
+/* ########################KONTAKT######################## */
+
+/* ########################OM MIG######################## */
+
+#about-me-box {
+  position: relative;
+  /* width: 600px;
+  height: 200px; */
+  width: 600px;
+  padding: 32px;
+  margin: 100px auto;
+  background-color: lightgray;
+  -webkit-box-shadow: 5px 5px 50px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 50px -15px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 50px -15px rgba(0,0,0,0.75);
+  border-radius: 0 10px 20px 20px;
+}
+
+#about-me-box p {
+  margin-top: 75px;
+}
+
+#about-me-box div {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 0;
+  right: 0;
+  
+}
+
+#about-me-box div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#about-me-box div p {
+  font-size: 12px;
+  color: rgba(128, 128, 128, 0.767);
+  position: absolute;
+  bottom: -12px;
+  left: 8px;
+}
+
+/* ########################OM MIG######################## */
+
+/* ########################PORTFOLIO######################## */
+
+
+
+#main-portfolio {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: inset 0px 20px 20px -25px rgba(0,0,0,1);
+  -moz-box-shadow: inset 0px 20px 20px -25px rgba(0,0,0,1);
+  box-shadow: inset 0px 20px 20px -25px rgba(0,0,0,1);
+}
+
+#projects-box {
+  width: 100%;
+  height: 400px;
+  padding-top: 25px;
+  /* -webkit-box-shadow: inset 0px 20px 20px -25px rgba(0,0,0,1);
+  -moz-box-shadow: inset 0px 20px 20px -25px rgba(0,0,0,1);
+  box-shadow: inset 0px 20px 20px -25px rgba(0,0,0,1); */
+}
+
+#footer-portfolio {
+  position: absolute;
+  bottom: -1000px;
+}
+
+.project {
+  position: relative;
+  width: 400px;
+  background-color: rgb(240, 240, 240);
+  border-bottom: 3px solid black;
+  padding: 8px;
+  margin: 0 auto;
+  margin-top: 50px;
+  -webkit-box-shadow: 5px 5px 50px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 50px -15px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 50px -15px rgba(0,0,0,0.75);
+  transition: 500ms;
+}
+.project:hover {
+  transform: scale(1.05)
+}
+
+.project h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.project img {
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* ########################PORTFOLIO######################## */
+
