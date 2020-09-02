@@ -70,7 +70,7 @@ nav a {
 
 #main-image {
   height: 400px;
-  background-image: url("imgs/bg-kontakt.jpg");
+  background-image: url("../imgs/bg-kontakt.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -253,7 +253,7 @@ header li {
 
 #body-kontakt {
   position: relative;
-  background-image: url("imgs/bg-kontakt.jpg");
+  background-image: url("../imgs/bg-kontakt.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
